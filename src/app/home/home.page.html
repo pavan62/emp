@@ -1,20 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="abc">
+  <ion-toolbar class="abc">
     <ion-title>
-      Blank
+      Add user
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<div class="abc">
+  
+</div>
+<ion-content  class="abc">
+  
+    
+      <ion-card >
+        
+          <ion-item><span class="material-icons">
+            person_outline
+            </span>
+            <ion-label position="fixed">Name</ion-label>
+            <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <span class="material-icons">
+              phone
+              </span>
+            <ion-label position="fixed">Phone</ion-label>
+            <ion-input type="number" [(ngModel)]="user.age"></ion-input>
+          </ion-item>
+          <ion-item>
+            <span class="material-icons">
+              mail
+              </span>
+            <ion-label position="fixed">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="user.mail"></ion-input>
+          </ion-item>
+          <ion-item>
+            <span class="material-icons">
+              backup
+              </span>
+            <ion-label>Upload Image</ion-label>
+            <img src="{{imageUrl}}" >
+            <ion-button (click)="getcamera()">Camera</ion-button>
+            <ion-button (click)="getgallery()">Gallery</ion-button>
+          
+          </ion-item>
+          </ion-card>
+        
+            <ion-button class="c" color="primary"   [routerLink]="'/confirm'">Confirm</ion-button>
+         
+     
+      <!-- <ion-item class="ion-float-right" lines="none">
+        <ion-button color="primary"  [routerLink]="'/confirm'">View user</ion-button>
+      </ion-item> -->
+    
+  
+  
 </ion-content>

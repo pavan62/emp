@@ -1,0 +1,51 @@
+<ion-header >
+  <ion-toolbar class="abc">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>User Details</ion-title>
+      
+    </ion-buttons>
+        
+      
+    
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-card>
+      <ion-card-header>
+        User
+      </ion-card-header>
+        <ion-item>
+        <ion-avatar slot="start">
+          <ion-img [src]="">
+    
+          </ion-img>
+        </ion-avatar>
+        <ion-label>
+          {{user.name}}
+        </ion-label>
+        
+      </ion-item>
+      <ion-card-content>
+        <ion-item>
+          <span class="material-icons">
+            mail
+            </span>
+          <h2>{{user.mail}}</h2>
+        </ion-item>
+        <ion-item>
+          <span class="material-icons">
+            phone
+            </span>
+          <h2>{{user.age}}</h2>
+        </ion-item>
+        
+      </ion-card-content>
+    
+        
+      
+  </ion-card>
+</ion-content>
